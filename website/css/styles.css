@@ -1,0 +1,139 @@
+/* Styles for my website. */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body 
+{
+    background-color: beige;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header
+{
+    padding: 20px 0;
+    background-color: yellow;
+}
+
+.inner-header
+{
+    max-width: 1200px;
+    margin: 0 auto; 
+    overflow: hidden; 
+}
+
+#logo
+{
+    height: 200px;
+    float:left;
+}
+
+nav ul
+{
+    float:right;
+    margin-top:30px;
+    list-style-type: none;
+}
+
+nav li
+{
+    float:left;
+    margin-left: 30px;
+}
+
+nav a
+{
+    text-decoration: none;
+}
+ 
+
+#wrapper
+{
+    max-width: 1200px;
+    margin: 20px auto;
+
+    clear:both;
+    overflow: hidden;
+}
+
+#hero
+{
+    background-color: red;
+    margin-bottom: 20px;
+}
+
+img 
+{
+ max-width: 100%;
+}
+
+main 
+{
+    width: 62%;
+    background-color: lightblue;
+    float:left;
+}
+
+aside 
+{
+    width: 35%;
+    background-color: lightsalmon;
+    float:right;
+}
+
+footer
+{
+    /* If height and line-height match, text will be vertically
+    centered. :D */
+    height: 60px;
+    line-height: 60px;
+
+    background-color: lightgray;
+    clear:both;
+}
+
+footer ul 
+{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+footer li 
+{
+    justify-content: center;
+    margin: 0 15px;
+}
+
+/* Typography */
+
+p 
+{
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+h1
+{
+   font-size: 2.5em; 
+}
+
+h2 
+{
+    font-size: 2.0em;
+}
+
+h3
+{
+    font-size: 1.5em;
+}
+
+h1, h2, h3
+{
+    margin-bottom: 10px;
+    font-family:playfair;
+}
