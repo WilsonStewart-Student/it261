@@ -139,7 +139,7 @@
     #wrapper
     {
         width: 1200px;
-        height:549.2;
+        height: 549.2px;
         margin: 0px auto;
 
         clear:both;
@@ -247,7 +247,7 @@
     #potd-display
     {
         width: 31.5%;
-        height: calc(489.2 - 48)px;
+        height: 441.2px; /* 489.2 - 48 */
         margin: 15px 0 0 30px;
 
         text-align: center;
@@ -260,7 +260,7 @@
 
     #potd-image
     {
-        height:275px;
+        height: 275px;
     }
 
     #potd-description
@@ -273,7 +273,7 @@
 
     #potd-description p
     {
-        height:100px;
+        height: 100px;
     }
 
     #potd-description a
