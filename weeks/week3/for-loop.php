@@ -63,14 +63,15 @@
         </tr>
 
         <?php
-            for($cel = 0; $cel <= 100; $cel += 5)
+            for($cel = 0; $cel <= 100; $cel += 3)
             {
                 $far = ($cel * 9) / 5 + 32;
 
                 echo "<tr>";
 
                 echo "<td> $cel </td>";
-                echo "<td> $far </td>";
+                // echo "<td> $far </td>";
+                echo "<td> ".floor($far)." </td>";
 
                 echo "</tr>";
             }
