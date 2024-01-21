@@ -20,19 +20,19 @@
         <br> 
 
         <nav>
-        <ul>
-            <li> <a href=""> Switch </a> </li>
-            <li> ☼ </li>
-            <li> <a href=""> Troubleshoot </a> </li>
-            <li> ☼ </li>
-            <li> <a href=""> Calculator </a> </li>
-            <li> ☼ </li>
-            <li> <a href=""> Email </a> </li>
-            <li> ☼ </li>
-            <li> <a href=""> Database </a> </li>
-            <li> ☼ </li>
-            <li> <a href=""> Gallery </a> </li>
-        </ul>
+            <ul>
+                <li> <a href="website/daily.php"> Switch </a> </li>
+                <li> ☼ </li>
+                <li> <a href=""> Troubleshoot </a> </li>
+                <li> ☼ </li>
+                <li> <a href=""> Calculator </a> </li>
+                <li> ☼ </li>
+                <li> <a href=""> Email </a> </li>
+                <li> ☼ </li>
+                <li> <a href=""> Database </a> </li>
+                <li> ☼ </li>
+                <li> <a href=""> Gallery </a> </li>
+            </ul>
         </nav>  
 
         </div> <!-- End "inner-header". -->
@@ -65,6 +65,14 @@
             <p> <a href="weeks/week2/currency-logic.php"> ► currency-logic.php </a> </p>
             <p> <a href="weeks/week2/currency.php"> ► currency.php </a> </p>
             <p> <a href="weeks/week2/heredoc.php"> ► heredoc.php </a> </p>
+            <br>
+            <h3> Week 3 </h3>
+            <p> <a href="weeks/week3/if.php"> ► if.php </a> </p>
+            <p> <a href="weeks/week3/date.php"> ► date.php </a> </p>
+            <p> <a href="weeks/week3/for-each.php"> ► for-each.php </a> </p>
+            <p> <a href="weeks/week3/index.php"> ► index.php </a> </p>
+            <p> <a href="weeks/week3/for-loop.php"> ► for-loop.php </a> </p>
+            <p> <a href="weeks/week3/switch.php"> ► switch.php </a> </p>
         </aside>
 
     </div><!-- End "wrapper". -->
