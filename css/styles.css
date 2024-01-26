@@ -149,9 +149,13 @@ aside
     background-color: #e5f7d2;
 
     width: 34%;
+    height:100%;
     padding: 10px;
 
     float:right;
+
+    overflow-y: scroll;
+    overflow-x:hidden;
 }
 
 

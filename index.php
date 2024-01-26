@@ -73,9 +73,18 @@
             <p> <a href="weeks/week3/index.php"> ► index.php </a> </p>
             <p> <a href="weeks/week3/for-loop.php"> ► for-loop.php </a> </p>
             <p> <a href="weeks/week3/switch.php"> ► switch.php </a> </p>
+            <br>
+            <h3> Week 4 </h3>
+            <p> <a href="weeks/week4/form-get.php"> ► form-get.php </a> </p>
+            <p> <a href="weeks/week4/form1.php"> ► form1.php </a> </p>
+            <p> <a href="weeks/week4/form2.php"> ► form2.php </a> </p>
+            <p> <a href="weeks/week4/form3.php"> ► form3.php </a> </p>
+            <p> <a href="weeks/week4/arithmetic-form.php"> ► arithmetic-form.php </a> </p>
+            <p> <a href="weeks/week4/celcius.php"> ► celcius.php </a> </p>
+            <p> <a href="weeks/week4/adder.php"> ► adder.php </a> </p>
         </aside>
 
-    </div><!-- End "wrapper". -->
+    </div> <!-- End "wrapper". -->
 
 
     <footer>
