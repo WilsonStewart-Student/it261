@@ -43,9 +43,3 @@ echo'<p><a href="">Reset page</a></p>'; //  Added semicolon to end of line, adde
 
 </body>
 </html> <!-- Removed "';{?>" from end of line -->
-
-
-
-
-
-

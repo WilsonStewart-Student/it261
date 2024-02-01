@@ -23,9 +23,9 @@
             <ul>
                 <li> <a href="website/daily.php"> Switch </a> </li>
                 <li> ☼ </li>
-                <li> <a href=""> Troubleshoot </a> </li>
+                <li> <a href="weeks/week4/adder.php"> Troubleshoot </a> </li>
                 <li> ☼ </li>
-                <li> <a href=""> Calculator </a> </li>
+                <li> <a href="weeks/week5/calculator.php"> Calculator </a> </li>
                 <li> ☼ </li>
                 <li> <a href=""> Email </a> </li>
                 <li> ☼ </li>
@@ -81,7 +81,14 @@
             <p> <a href="weeks/week4/form3.php"> ► form3.php </a> </p>
             <p> <a href="weeks/week4/arithmetic-form.php"> ► arithmetic-form.php </a> </p>
             <p> <a href="weeks/week4/celcius.php"> ► celcius.php </a> </p>
-            <p> <a href="weeks/week4/adder.php"> ► adder.php </a> </p>
+            <!-- <p> <a href="weeks/week4/adder.php"> ► adder.php </a> </p> -->
+            <br>
+            <h3> Week 5 </h3>
+            <p> <a href="weeks/week5/currency1.php"> ► currency1.php </a> </p>
+            <p> <a href="weeks/week5/currency2.php"> ► currency2.php </a> </p>
+            <p> <a href="weeks/week5/currency3.php"> ► currency3.php </a> </p>
+            <p> <a href="weeks/week5/currency3.php"> ► currency4.php </a> </p>
+            <p> <a href="weeks/week5/null.php"> ► null.php </a> </p>
         </aside>
 
     </div> <!-- End "wrapper". -->
