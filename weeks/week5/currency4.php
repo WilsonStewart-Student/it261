@@ -120,7 +120,7 @@
 
                     if ($dollars < 1)
                     {
-                        echo '<h2> I am VERY unhappy, because I only have '.$dollars_formatted.'... That\'s less than a dollar! </h2>
+                        echo '<h2> I am VERY unhappy, because I only have <span style="color: red; background-color: pink;">'.$dollars_formatted.'</span>... That\'s less than a dollar! </h2>
                         <iframe width="400" height="315" src="https://www.youtube-nocookie.com/embed/pumVu-WWhKM?si=t8BKhArAHYOqB2hV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
                     }
                     elseif ($dollars < 500)
@@ -135,7 +135,7 @@
                     }
                     else 
                     {
-                        echo '<h2> I am VERY happy, because I have '.$dollars_formatted.' American dollars! </h2>
+                        echo '<h2> I am VERY happy, because I have <span style="color: green; background-color: lightgreen;">'.$dollars_formatted.'</span> American dollars! </h2>
                         <iframe width="400" height="315" src="https://www.youtube-nocookie.com/embed/mZRP7nQkfrM?si=vNusC2imyl6WRw8a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
                     }
 
