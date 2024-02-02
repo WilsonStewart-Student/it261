@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/styles.css" type="text/css" rel="stylesheet">
-    <title> Currency3 Sticky PHP Form! </title>
+    <title> Currency4 </title>
     <!-- In this form, if the user fails to fill out all of the fields, the information they DID fill out won't disappear when the form is reloaded. -->
 </head>
 
