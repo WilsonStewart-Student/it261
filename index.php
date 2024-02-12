@@ -89,6 +89,11 @@
             <p> <a href="weeks/week5/currency3.php"> ► currency3.php </a> </p>
             <p> <a href="weeks/week5/currency4.php"> ► currency4.php </a> </p>
             <p> <a href="weeks/week5/null.php"> ► null.php </a> </p>
+            <br>
+            <h3> Week 6 </h3>
+            <p> <a href="weeks/week6/form.php"> ► form.php </a> </p>
+            <p> <a href="weeks/week6/form2.php"> ► form2.php </a> </p>
+            <p> <a href="weeks/week6/functions.php"> ► functions.php </a> </p>
         </aside>
 
     </div> <!-- End "wrapper". -->
