@@ -32,12 +32,12 @@
 
             </tr>
 
-            <tr> <td colspan="4" id="divider"> </td> <tr>
+            <tr> <td colspan="4" id="divider"> </td> </tr>
 
             <tr>
-                <td>
-            <ul>
+            <td>
             <label> Favorite Pony Species </label>
+            <ul>
                 <li>
                 <input type="checkbox" name="species[]" value="earth pony" <?php if (isset($_POST["species"]) && in_array("earth pony", $species)) {echo"checked=\"checked\"";} ?> > <span class="checkbox-text">Earth Pony</span>
                 </li>
