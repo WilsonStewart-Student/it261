@@ -27,7 +27,7 @@
                 <li> ☼ </li>
                 <li> <a href="weeks/week5/calculator.php"> Calculator </a> </li>
                 <li> ☼ </li>
-                <li> <a href=""> Email </a> </li>
+                <li> <a href="website/contact.php"> Email </a> </li>
                 <li> ☼ </li>
                 <li> <a href=""> Database </a> </li>
                 <li> ☼ </li>
@@ -94,6 +94,12 @@
             <p> <a href="weeks/week6/form.php"> ► form.php </a> </p>
             <p> <a href="weeks/week6/form2.php"> ► form2.php </a> </p>
             <p> <a href="weeks/week6/functions.php"> ► functions.php </a> </p>
+            <br>
+            <h3> Week 7 </h3>
+            <p> <a href="weeks/week7/form3.php"> ► form3.php </a> </p>
+            <p> <a href="weeks/week7/strings.php"> ► strings.php </a> </p>
+            <p> <a href="weeks/week7/pictures.php"> ► pictures.php </a> </p>
+            <p> <a href="weeks/week7/rand.php"> ► rand.php </a> </p>
         </aside>
 
     </div> <!-- End "wrapper". -->

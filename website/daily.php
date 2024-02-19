@@ -82,7 +82,7 @@ include("includes/header.php");
     <div id="wrapper">
 
         <div id="main-aside">
-        <h1 style="background-color: <?php echo $color;?>; box-shadow: 0px 0px 15px 15px <?php echo $color;?>;"> Pony of the day! </h1>
+        <h1 style="background-color: <?php echo $color;?>; box-shadow:  0px 0px 10px 15px <?php echo $color;?>, 0px 0px 15px 15px <?php echo $color;?>;"> Pony of the day! </h1>
 
         <div id="potd-display"  style="box-shadow: 0px 0px 15px 15px <?php echo $color;?>; background-color: <?php echo $color;?>;">
             <?php echo $pony; ?>

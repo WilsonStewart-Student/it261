@@ -17,8 +17,27 @@ include("includes/header.php");
         </main>
 
         <aside>
-            <h3> This is our Headline 3 in our beautiful aside! </h3>
-            <p>  Ut facilisis ultrices lacus a iaculis. Donec ac suscipit dolor. Phasellus volutpat nibh a turpis egestas fermentum. Sed facilisis felis ac ante sollicitudin, ac aliquam libero placerat. Integer feugiat ex eu consectetur porta. Cras eleifend porttitor mi, ac commodo orci varius sed. In malesuada, neque eu dictum pulvinar, sem sem vulputate erat, id commodo lacus enim nec est. Ut ut sapien elit. Maecenas id elit eu eros mollis ultricies ut nec ligula. Sed eget nulla purus. Integer vestibulum euismod lorem, eget bibendum lacus maximus dapibus. Mauris urna odio, vestibulum a rhoncus eu, pharetra et est. </p>
+            <h3> Please enjoy this random image of Twilight, courtesy of my aside! </h3>
+            <?php
+            $photos[0] = "twilight1";
+            $photos[1] = "twilight2";
+            $photos[2] = "twilight3";
+            $photos[3] = "twilight4";
+
+            function random_images($photos)
+            {
+                $my_return = "";
+
+                $i = rand(0, 3);
+                $selected_image = "".$photos[$i].".png";
+
+                $my_return = "<img src='images/$selected_image' alt='".$photos[$i]."'>";
+                return $my_return;
+            } // End random_images().
+
+            echo random_images($photos);
+
+            ?>
         </aside>
 
     </div> <!-- End "wrapper". -->

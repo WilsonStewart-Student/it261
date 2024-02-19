@@ -34,6 +34,10 @@
             $body = "contact inner";
         break;
 
+        case "thx.php" : 
+            $title = "Thank You for Filling Out our Contact Form";
+            $body = "thx inner";
+        break;
 
         case "gallery.php" : 
             $title = "Gallery page of our Website Project";
@@ -109,17 +113,14 @@
     $email = "";
     $email_error = "";
 
-    $gender = "";
-    $gender_error = "";
-
     $phone = "";
     $phone_error = "";
 
-    $wines = "";
-    $wines_error = "";
+    $species = "";
+    $species_error = "";
 
-    $regions = "";
-    $regions_error = "";
+    $mane6 = "";
+    $mane6_error = "";
 
     $comments = "";
     $comments_error = "";
@@ -159,40 +160,41 @@
             $email = $_POST["email"];
         }
 
-        if (empty($_POST["gender"]))
-        {
-            $gender_error = "Please select your gender.";
-        }
-        else 
-        {
-            $gender = $_POST["gender"];
-        }
-
-        if (empty($_POST["phone"]))
-        {
+        if(empty($_POST["phone"])) 
+        { 
+            // If empty, type in your number.
             $phone_error = "Please fill out your phone number.";
         }
-        else 
+        elseif(array_key_exists('phone', $_POST))
         {
+            if(!preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone']))
+            { 
+            // If you are not typing the requested format of xxx-xxx-xxxx, display "Invalid format".
+            // preg_match() checks a string for case-sensitive information detailed in RegEx format.
+            $phone_error = "Invalid format!";
+            }
+            else
+            {
             $phone = $_POST["phone"];
-        }
+            } // end else
+        } // end main if
 
-        if (empty($_POST["wines"]))
+        if (empty($_POST["species"]))
         {
-            $wines_error = "What...? No wines?";
+            $species_error = "Please pick your favorite species!";
         }
         else 
         {
-            $wines = $_POST["wines"];
+            $species = $_POST["species"];
         }
 
-        if (empty($_POST["regions"]))
+        if (empty($_POST["mane6"]))
         {
-            $regions_error = "Please select your region.";
+            $mane6_error = "Please pick your favorite Mane 6 pony!";
         }
         else 
         {
-            $regions = $_POST["regions"];
+            $mane6 = $_POST["mane6"];
         }
 
         if (empty($_POST["comments"]))
@@ -206,7 +208,7 @@
 
         if (empty($_POST["privacy"]))
         {
-            $privacy_error = "You must agree to recieve spam emails!!!!!!";
+            $privacy_error = "You must agree for us to sell all of your data!";
         }
         else 
         {
@@ -215,32 +217,31 @@
 
         //
 
-        function my_wines($wines)
+        function my_species($species)
         {
             $my_return = "";
-            // If $_POST["wines"] is not empty, implode $_POST["wines"] and assign it to $my_return.
-            if (!empty($_POST["wines"]))
+            // If $_POST["species"] is not empty, implode $_POST["species"] and assign it to $my_return.
+            if (!empty($_POST["species"]))
             {
-                $my_return = implode(', ', $_POST["wines"]);
+                $my_return = implode(', ', $_POST["species"]);
             }
             return $my_return;
-        } // Closing my_wines().
+        } // Closing my_species().
 
         //
 
         if (isset($_POST["first_name"],
         $_POST["last_name"],
         $_POST["email"],
-        $_POST["gender"],
         $_POST["phone"],
-        $_POST["wines"],
-        $_POST["regions"],
+        $_POST["species"],
+        $_POST["mane6"],
         $_POST["comments"],
         $_POST["privacy"] ))
         {
 
-            // Where the form data will be sent. (This is a really old email of mine.)
-            $to = "lolalightningbug@gmail.com"; 
+            // Where the form data will be sent. 
+            $to = "szemeo@mystudentswa.com"; 
             // Subject of the email from the form.
             date_default_timezone_set("America/Los_Angeles");
             $subject = "Test Email on ".date("m/d/y, h:i A")."";
@@ -251,25 +252,20 @@
             First Name: $first_name ".PHP_EOL."
             Last Name: $last_name ".PHP_EOL."
             Email Address: $email ".PHP_EOL."
-            Gender: $gender ".PHP_EOL."
             Phone Number: $phone ".PHP_EOL."
-            Wine(s): ".my_wines($wines)." ".PHP_EOL."
-            Region: $regions ".PHP_EOL."
+            Favorite Pony Species: ".my_species($species)." ".PHP_EOL."
+            Favorite Mane 6 Pony: $mane6 ".PHP_EOL."
             Comments: $comments ".PHP_EOL."
             ";
-            $headers = array(
-                'From' => 'lolalightningbug@gmail.com'
-            );
 
             // If statement stating that the email part of the form will only work if all the fields are filled out.
 
             if (!empty($first_name 
             && $last_name 
             && $email
-            && $gender
             && $phone
-            && $wines
-            && $regions
+            && $species
+            && $mane6
             && $comments
             && $privacy))
             {
