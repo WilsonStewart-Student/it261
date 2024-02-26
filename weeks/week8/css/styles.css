@@ -1,0 +1,94 @@
+/* Styles for Week 8's people.pho and people-view.php files. */
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p
+{
+    margin-bottom: 20px;
+    line-height: 1.4em;
+}
+
+ul
+{
+    margin-bottom: 10px;
+}
+
+li
+{
+    line-height: 1.3em;
+}
+
+h1, h2, h3
+{
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+
+body
+{
+    background-color: blanchedalmond;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+#wrapper
+{
+    max-width: 1000px;
+    margin: 30px auto;
+
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+main 
+{
+    width: 63%;
+    float: left;
+}
+
+aside 
+{
+    width: 34%;
+    float: right;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+footer
+{
+    font-size: .9em;
+
+    border-top: 1px dotted brown;
+
+    clear: both;
+}
+
+.inner-footer
+{
+    margin: 0 auto; 
+}
+
+footer ul 
+{
+    display: flex;
+    justify-content: center;
+
+    list-style-type: none;
+    
+    margin-bottom: 0;
+}
+
+footer li 
+{
+    justify-content: center;
+    margin: 10px 15px;
+}
+
+
