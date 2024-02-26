@@ -22,7 +22,12 @@
         font-size: 1.5em;
     }
 
-    h1, h2, h3
+    h4
+    {
+        font-size: 1.25em;
+    }
+
+    h1, h2, h3, h4
     {
         margin-bottom: 10px;
         font-family:playfair;
@@ -315,7 +320,6 @@
         padding: 5px;
     }
 
-
     legend
     {
         background-color: #cc3495;
@@ -359,7 +363,6 @@
         display:block;
         padding:5px
     }
-
 
     input[type=text],[type=tel],[type=email], select, input[type=submit]
     {
@@ -411,4 +414,51 @@
     }
 /*  */
 
+/* Gallery Page */
+
+#elements-of-harmony td:first-child {
+    width: 50px;
+    text-align: center;
+    /* background-color: red; */
+}
+
+#elements-of-harmony td:nth-child(2) {
+    width: 250px;
+
+    /* background-color: blue; */
+}
+
+
+#element-credit, #element-credit a
+{
+    margin-top: 10px;
+    opacity: .8;
+    font-style: italic;
+    color:#f8e3c4
+}
+
+#element-credit a
+{
+    text-shadow:0 0 10px #f8e3c4;
+}
+
+.glow
+{
+    animation-name: glow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes glow 
+{
+    0% {
+        text-shadow: 0 0 20px #f8e3c4;
+      }
+    50% {
+        text-shadow: 0 0 0px #f8e3c4;
+      }
+      100% {
+        text-shadow: 0 0 20px #f8e3c4;
+      }
+}
 
