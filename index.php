@@ -31,7 +31,7 @@
                 <li> ☼ </li>
                 <li> <a href=""> Database </a> </li>
                 <li> ☼ </li>
-                <li> <a href=""> Gallery </a> </li>
+                <li> <a href="website/gallery.php"> Gallery </a> </li>
             </ul>
         </nav>  
 
@@ -100,6 +100,9 @@
             <p> <a href="weeks/week7/strings.php"> ► strings.php </a> </p>
             <p> <a href="weeks/week7/pictures.php"> ► pictures.php </a> </p>
             <p> <a href="weeks/week7/rand.php"> ► rand.php </a> </p>
+            <br>
+            <h3> Week 8 </h3>
+            <p> <a href="weeks/week8/people.php"> ► people.php </a> </p>
         </aside>
 
     </div> <!-- End "wrapper". -->
