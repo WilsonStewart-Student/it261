@@ -29,7 +29,7 @@
                 <li> ☼ </li>
                 <li> <a href="website/contact.php"> Email </a> </li>
                 <li> ☼ </li>
-                <li> <a href=""> Database </a> </li>
+                <li> <a href="website/project.php"> Database </a> </li>
                 <li> ☼ </li>
                 <li> <a href="website/gallery.php"> Gallery </a> </li>
             </ul>
@@ -103,6 +103,9 @@
             <br>
             <h3> Week 8 </h3>
             <p> <a href="weeks/week8/people.php"> ► people.php </a> </p>
+            <br>
+            <h3> Week 9 </h3>
+            <p> <a href="weeks/week9/register.php"> ► register.php </a> </p>
         </aside>
 
     </div> <!-- End "wrapper". -->

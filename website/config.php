@@ -16,32 +16,37 @@
 
         case "about.php" : // When THIS_PAGE = about.php, the following variables are defined as so.
             $title = "About page of our Website Project";
-            $body = "about inner";
+            $body = "about-inner";
         break;
 
         case "daily.php" : 
             $title = "Daily page of our Website Project";
-            $body = "daily inner";
+            $body = "daily-inner";
         break;
 
         case "project.php" : 
             $title = "Project page of our Website Project";
-            $body = "project inner";
+            $body = "project-inner";
+        break;
+
+        case "project-artist.php" : 
+            $title = "Artist page of our Website Project";
+            $body = "project-artist-inner";
         break;
 
         case "contact.php" : 
             $title = "Contact page of our Website Project";
-            $body = "contact inner";
+            $body = "contact-inner";
         break;
 
         case "thx.php" : 
             $title = "Thank You for Filling Out our Contact Form";
-            $body = "thx inner";
+            $body = "thx-inner";
         break;
 
         case "gallery.php" : 
             $title = "Gallery page of our Website Project";
-            $body = "gallery inner";
+            $body = "gallery-inner";
         break;
     }
 
@@ -306,4 +311,28 @@
         } // Closing isset().
 
     } // Closing $_SERVER["REQUEST_METHOD"].
+//
+
+// █▀▄ █▄▄   █▀█ █░█ █▀█
+// █▄▀ █▄█   █▀▀ █▀█ █▀▀
+
+    define('DEBUG', 'TRUE');  // We want to see our errors!!!
+
+    include('../weeks/week8/credentials.php');
+
+    function myError($myFile, $myLine, $errorMsg)
+    {
+        if(defined('DEBUG') && DEBUG)
+        {
+            echo 'Error in file: <b> '.$myFile.' </b> on line: <b> '.$myLine.' </b>';
+            echo 'Error message: <b> '.$errorMsg.'</b>';
+            die();
+        } 
+
+        else 
+        {
+            echo 'Houston, we have a problem!';
+            die();
+        }    
+    }
 //

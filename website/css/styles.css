@@ -56,6 +56,12 @@
         box-sizing: border-box;
     }
 
+    img 
+    {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
     header
     {
         background-color: #cc3495;
@@ -163,6 +169,9 @@
         height:489.2px;
         margin:30px;
 
+        /* overflow-y: scroll;
+        scrollbar-color: #f8e3c4 #cc3495; */
+
         float:left;
     }
 
@@ -205,6 +214,21 @@
 
         background-color: #6b1fb1;
         box-shadow:  0px 0px 10px 15px #6b1fb1;
+    }
+
+    .right-half, .left-half
+    {
+        width: 49%;
+    }
+
+    .right-half
+    {
+        float:left;
+    }
+
+    .left-half
+    {
+        float:right;
     }
 
 
@@ -416,49 +440,103 @@
 
 /* Gallery Page */
 
-#elements-of-harmony td:first-child {
-    width: 50px;
-    text-align: center;
-    /* background-color: red; */
-}
+    #elements-of-harmony td:first-child {
+        width: 50px;
+        text-align: center;
+    }
 
-#elements-of-harmony td:nth-child(2) {
-    width: 250px;
-
-    /* background-color: blue; */
-}
+    #elements-of-harmony td:nth-child(2) {
+        width: 250px;
+    }
 
 
-#element-credit, #element-credit a
-{
-    margin-top: 10px;
-    opacity: .8;
-    font-style: italic;
-    color:#f8e3c4
-}
+    #element-credit, #element-credit a
+    {
+        margin-top: 10px;
+        opacity: .8;
+        font-style: italic;
+        color:#f8e3c4
+    }
 
-#element-credit a
-{
-    text-shadow:0 0 10px #f8e3c4;
-}
+    #element-credit a
+    {
+        text-shadow:0 0 10px #f8e3c4;
+    }
 
-.glow
-{
-    animation-name: glow;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-}
+    .glow
+    {
+        animation-name: glow;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
 
-@keyframes glow 
-{
-    0% {
-        text-shadow: 0 0 20px #f8e3c4;
-      }
-    50% {
-        text-shadow: 0 0 0px #f8e3c4;
-      }
-      100% {
-        text-shadow: 0 0 20px #f8e3c4;
-      }
-}
+    @keyframes glow 
+    {
+        0% {
+            text-shadow: 0 0 20px #f8e3c4;
+        }
+        50% {
+            text-shadow: 0 0 0px #f8e3c4;
+        }
+        100% {
+            text-shadow: 0 0 20px #f8e3c4;
+        }
+    }
+/*  */
+
+/* Project Page */
+
+    .art-preview
+    {
+        width: 150px; 
+        height: 150px;
+        object-fit: cover; object-position: 50% 70%;
+
+    }
+
+    .art-preview-div
+    { 
+        height: 215px;
+        text-align: center;
+    }
+
+    .art-preview-div a 
+    {
+        line-height: 1.5;
+        display: block;
+
+        color:#f8e3c4;
+    }
+
+    .art-preview-column
+    {
+        width:20%;
+        float:left;
+
+        margin-top: 20px;
+    }
+
+    .project-artist-inner main
+    {
+        text-align: center;
+    }
+
+    .project-artist-inner aside
+    {
+        text-align: left;
+    }
+
+    .art-preview-div a:hover
+    {
+        color:#6b1fb1; 
+        text-shadow: #6b1fb1 0 0 10px;
+    }
+
+    .art-full
+    {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+/*  */
 
