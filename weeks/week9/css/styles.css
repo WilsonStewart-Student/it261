@@ -1,0 +1,111 @@
+* 
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#wrapper
+{
+    max-width: 1100px;
+    margin: 30px auto;
+
+    background-color: beige;
+
+    clear: both;
+}
+
+h1
+{
+    font-size: 3em;
+    text-align: center;
+}
+
+.center
+{
+    text-align: center;
+}
+
+form
+{
+    max-width: 400px;
+    margin: 0 auto 30px auto;
+}
+
+input
+{
+    width: 100%;
+    margin-bottom: 10px
+}
+
+label
+{
+    display: block;
+    font-weight: bold;
+}
+
+fieldset
+{
+    border: 1px solid brown;
+    padding: 10px
+}
+
+header
+{
+    background: lightgray;
+    padding: 20px;
+
+    overflow: hidden;
+}
+
+.success
+{
+    float: left;
+}
+
+.welcome-logout
+{
+    float: right;
+}
+
+footer
+{
+    border-top: 1px solid lightgray;
+    background-color: white;
+
+    /* If height and line-height match, text will be vertically
+    centered. :D */
+    height: 50px;
+    line-height: 50px;
+    margin-top:30px;
+
+    clear:both;
+
+    position: fixed;
+    bottom: 0;
+
+    width:100%
+    
+}
+
+.inner-footer
+{
+    width: 1200px;
+    margin: 0 auto; 
+
+    overflow: hidden; 
+}
+
+footer ul 
+{
+    display: flex;
+    justify-content: center;
+
+    list-style-type: none;
+}
+
+footer li 
+{
+    justify-content: center;
+    margin: 0 15px;
+}
