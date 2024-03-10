@@ -104,8 +104,9 @@
             <h3> Week 8 </h3>
             <p> <a href="weeks/week8/people.php"> ► people.php </a> </p>
             <br>
-            <h3> Week 9 </h3>
+            <h3> Week 9/10 </h3>
             <p> <a href="weeks/week9/register.php"> ► register.php </a> </p>
+            <p> <a href="weeks/week9/login.php"> ► login.php </a> </p>
         </aside>
 
     </div> <!-- End "wrapper". -->
