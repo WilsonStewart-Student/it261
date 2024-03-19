@@ -1,0 +1,559 @@
+/* Variables: */
+    :root 
+    {
+        --color3: #177413;
+        --color1: #abc123;
+        --color4: #ebd9b0;
+        --color2: #fcf1e3;
+    }
+
+/* :Variables */
+
+
+
+/* Universal: */
+
+    *
+    {
+        /* Sizing */
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+
+        /* Positioning */
+        z-index: auto;
+    }
+
+    body, html
+    {
+        /* Coloring */
+        background-color: var(--color1);
+
+        /* Sizing */
+        height: 100%;
+        min-height: 100%;
+
+        /* Positioning */
+        position: relative;
+        z-index: -1;
+    }
+
+    body 
+    {
+        /* Positioning */
+        display: flex;
+        flex-direction: column;
+
+        /* Font */
+        font-family: Arial, Helvetica, sans-serif
+    }
+
+/* :Universal */
+
+
+
+/* Typography: */
+
+    h1
+    {
+        font-size: 2em;
+    }
+
+    h2
+    {
+        font-size: 1.75em;
+    }
+
+    h3
+    {
+        font-size: 1.5em;
+    }
+
+    p
+    {
+        font-size: 1.25em;
+        font-weight: bold;
+    }
+
+    a
+    {
+        text-decoration: none;
+    }
+
+    h1, h2, h3, p, a
+    {
+        color: var(--color3);
+
+        position: relative;
+        z-index: 1;
+    }
+
+    ul
+    {
+        list-style-type: none;
+    }
+
+/* :Typography */
+
+
+
+/* Effects: */
+
+    #sky
+    {
+        /* Coloring */
+        /* Leaving this box-shadow here as a reminder to myself DO NOT USE A BOX SHADOW WHEN A GRADIENT WOULD WORK... WILSON YOUR SITE PERFORMANCE... */
+        /* box-shadow: 0 0 100px 100px #0f0063, 0 0 200px 200px #1f00cc, 0 0 300px 300px #0044ff, 0 0 350px 350px #00d072; */
+        background: linear-gradient(0deg, rgba(171,193,35,1) 0%, rgba(63,145,141,1) 20%, rgba(14,86,210,1) 40%, rgba(0,62,168,1) 65%, rgba(15,0,99,1) 100%);
+
+        /* Sizing */
+        width: 100%;
+        height: 650px;
+
+        /* Positioning */
+        position: absolute;
+        top: 0;
+        z-index: -2;
+    }
+
+    .fuzzy-frame
+    {
+        /* Coloring */
+        box-shadow: 0 0 15px 15px var(--color2);
+
+        /* Sizing */
+        width: 100%;
+        overflow: hidden;
+
+        /* Positioning */
+        text-align: center;
+        position: relative;
+    }
+
+    .fuzzy-frame::after
+    {
+        /* Coloring */
+        box-shadow: inset 0 0 10px 15px var(--color2);
+
+        /* Sizing */
+        content: '';
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        /* Positioning */
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+/* :Effects */
+
+
+/* General: */
+    /* Fix: Fixed px heights are based on a 1680 x 800 browser size. */
+
+    header
+    {
+        /* Coloring */
+        background-color: var(--color2);
+
+        /* Sizing */
+        height: 100px;
+        min-height: 100px;
+        line-height: 100px;
+        width: 100%;
+        flex: none;
+
+        /* Positioning */
+        text-align: center;
+        clear: both;
+    }
+
+    #inner-header
+    {
+        /* Sizing */
+        height: 100%;
+        width: 1000px;
+        
+        /* Positioning */
+        display: inline-block;
+    }
+
+    .login-info
+    {
+        width: 150px;
+        padding: 20px 10px;
+        line-height: 20px;
+
+        position:absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 3;
+
+        background-color: red;
+        box-shadow: inset 0 0 10px 10px var(--color1), inset 0 0 15px 15px var(--color2), inset 0 75px 50px 25px var(--color2), inset 0 -50px 100px 50px var(--color1) ; 
+
+        border-radius: 25px;
+
+        font-size:.6em;
+    }
+
+    nav ul 
+    {
+        /* Positioning */
+        display: flex;
+        justify-content: center;
+    }
+
+    nav li 
+    {
+        /* Sizing */
+        margin: 0 20px;
+    }
+
+    nav li img
+    {
+        /* Sizing */
+        max-height: 100px;
+    }
+
+    nav a:hover
+    {
+        color: var(--color1);
+    }
+
+
+
+    /* --- */
+
+
+
+    #wrapper
+    {
+        /* Sizing */ 
+        flex: auto;
+        width: 1000px;
+        margin: 10px auto;
+    }
+
+    main, aside, #main-aside
+    {
+        /* Coloring */     
+        background-color: var(--color2);
+        box-shadow: inset 0 0 15px 15px var(--color2), inset 0 100px 50px 25px var(--color2), inset 0 -50px 100px 50px var(--color1); 
+    
+        /* Sizing */
+        max-height: 100%;
+        padding: 25px;
+        border-radius: 50px;
+        overflow: hidden;
+    }
+
+    main
+    {
+        /* Sizing */
+        width: 62.5%;
+
+        /* Positioning */
+        float: left;
+    }
+
+    main img, aside img, #main-aside img
+    {
+        width: 100%;
+    }
+
+    main h1, aside h1, #main-aside h1
+    {
+        /* Coloring */
+        color: var(--color2);
+        background-color: var(--color1);
+        box-shadow:  0px 0px 10px 15px var(--color1);
+        
+        /* Positioning */
+        text-align: center;
+
+        /* Sizing */
+        margin: 5px 5px 25px 5px;
+        border-radius: 25px;
+    }
+
+    main h2
+    {
+        text-align: justify;
+    }
+
+    aside
+    {
+        /* Sizing */
+        width: 35%;
+
+        /* Positioning */
+        float: right;
+    }
+
+    #main-aside
+    {
+        width: 100%;
+    }
+
+
+    /* --- */
+
+
+
+    footer
+    {
+        /* Coloring */
+        background-color: var(--color2);
+
+        /* Sizing */
+        height: 50px;
+        min-height: 50px;
+        line-height: 50px;
+        width: 100%;
+        flex: none;
+
+        /* Positioning */
+        display: flex;
+        justify-content: center;
+    }
+
+
+    footer ul
+    {
+        /* Sizing */
+        height: 100%;
+        width: 1250px;
+
+        /* Positioning */
+        display: flex;
+        justify-content: center;
+    }
+
+    footer li 
+    {
+        /* Sizing */
+        margin: 0 20px;
+    }
+
+    footer a:hover
+    {
+        color: var(--color1);
+    }
+
+/* :General */
+
+
+/* Form: */
+
+    .error
+    {
+        /* Coloring */
+        color: rgb(229, 71, 71);
+
+        /* Sizing */
+        margin: 10px 0;
+        display: block;
+
+        /* Positioning */
+        text-align: center;
+        
+        /* Font */
+        font-style: italic;
+    }
+
+    form
+    {
+        /* Coloring */
+        color: var(--color3);
+        
+        /* Sizing */
+        margin: 100px 0;
+    }
+
+    fieldset
+    {
+        /* Misc */
+        border: none;
+    }
+
+    form p
+    {
+        /* Sizing */
+        margin-top: 10px;
+
+        /* Positioning */
+        text-align: center;
+    }
+
+    form table
+    {
+        /* Sizing */
+        margin: 0 auto;
+        width: 100%; 
+    }
+
+    form td
+    {
+        /* Sizing */
+        width: 25%;
+        padding: 10px;
+        margin: 0 auto;
+
+        /* Positioning */
+        text-align: left;
+        vertical-align: top;
+    }
+
+    label
+    {
+        /* Coloring */
+        color: var(--color3);
+
+        /* Sizing */
+        margin-bottom: 5px;
+
+        /* Font */
+        font-weight: bold;
+    }
+
+    input, label
+    {
+        /* Sizing */
+        padding: 5px;
+
+        /* Positioning */
+        display:block;
+    }
+
+    input[type=text],[type=tel],[type=email], [type=password]
+    {
+        /* Coloring */
+        box-shadow: 0 0 5px 5px var(--color1), inset 0 -2px 5px 1px var(--color4);
+        background: var(--color2);
+
+        /* Sizing */
+        border-radius: 50px;
+        width: 100%;
+        margin-bottom: 5px;
+
+        /* Positioning */
+        display:block;
+
+        /* Misc */
+        border: none;
+        border-bottom: 2px transparent solid;
+    }
+
+    input[type="checkbox"], input[type="radio"]
+    {
+        /* Positioning */
+        display:inline-block;
+
+        /* Misc */
+        border: 2px solid #ddd;
+        border-radius: 4px;
+      }
+
+    input:focus
+    {
+        /* Misc */
+        border-bottom: 2px var(--color3) solid;
+        outline: none;
+    }
+
+    input[type=submit], button[type=submit]
+    {
+        /* Coloring */
+        box-shadow: 0 0 5px 5px var(--color1), inset 0 -2px 5px 1px var(--color4);
+        background: var(--color2);
+
+        /* Sizing */
+        border-radius: 50px;
+        width: 100%;
+        margin-bottom: 5px;
+
+        /* Misc */
+        border: none;
+        border-bottom: 2px transparent solid;
+    }
+
+    #thx
+    {
+        margin: 0 auto;
+        width: fit-content;
+    }
+
+/* :Form */
+
+/* Login/Register: */
+
+    button[type=submit] 
+    {
+        margin: 25px 0;
+        margin-right: 10px;
+        max-width: 25%;
+    }
+
+    .login-inner form, .register-inner form
+    {
+        /* Coloring */
+        color: var(--color3);
+        
+        /* Sizing */
+        margin: 0 auto;
+        width: fit-content;
+    }
+
+    .login-inner input[type=text], .login-inner input[type=password], .register-inner input[type=text], .register-inner input[type=password], .register-inner input[type=email]
+    {
+        width:500px;
+    }
+
+
+
+/* :Login/Register */
+
+/* Project: */
+
+    .project-inner figure img
+    {
+        width: calc(100%/3);
+        aspect-ratio: 1 / 1;
+        object-fit: cover; 
+        object-position: 50% 0%;
+    }
+
+/* :Project */
+
+/* Gallery/Project: */
+    .gallery-inner #main-aside, .project-inner #main-aside
+    {
+        text-align: center;
+    }
+
+    .gallery-inner #main-aside figure, .project-inner #main-aside figure
+    {
+        width: calc(100%/3);
+        padding:10px;
+
+        float:left;
+        margin: auto;
+    }
+
+    .gallery-inner #main-aside img, .project-inner #main-aside img
+    {
+        width: 100%;
+    }
+
+    #gallery
+    {
+        box-shadow: 0 0 10px 15px var(--color2);
+        background-color: var(--color2);
+        overflow:hidden;
+}
+/* :Gallery/Project */
+
+
